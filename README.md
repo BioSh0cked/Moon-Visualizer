@@ -5,14 +5,14 @@ A **Perform Mode** audio visualizer built in TouchDesigner that renders a proced
 
 ## Features
 - URL or local audio input
-- Audio-reactive terrain (noise-based displacement)
+- Audio-reactive visualizer (noise based on the Moon's surface)
 - Minimal Perform Mode UI (file select + URL input)
 
 ## Node Visualizer Chain
-[FLOWCHART HERE]
+![Visual Chain](https://raw.githubusercontent.com/BioSh0cked/Moon-Visualizer/refs/heads/main/VisualChain.svg)
 
 ## Usage
-1. Enter Perform Mode
+1. Enter Perform Mode (F1)
 2. Choose:
    - Local file (file directory), or
    - Direct URL (string input)
