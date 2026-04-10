@@ -1,6 +1,5 @@
 # Moon Surface Audio Visualizer (TouchDesigner)
 
-## Overview
 A **Perform Mode** audio visualizer built in TouchDesigner that renders a procedural, moon-like surface driven by Touchdesigner's audio analysis. Noise is added through the surface of the Moon through [NASA's Moon Trek](https://trek.nasa.gov/moon/). Supports both **direct file URLs** and **local file selection**.
 
 ## Features
