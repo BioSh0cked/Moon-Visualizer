@@ -16,3 +16,6 @@ A **Perform Mode** audio visualizer built in TouchDesigner that renders a proced
    - Local file (file directory), or
    - Direct URL (string input)
 3. Visualizer activates automatically when audio is present
+
+## Demo
+![BaseVisual](https://github.com/BioSh0cked/Moon-Visualizer/blob/main/BaseVisual.gif?raw=true)
