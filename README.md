@@ -11,11 +11,13 @@ A **Perform Mode** audio visualizer built in TouchDesigner that renders a proced
 ![Visual Chain](https://media.githubusercontent.com/media/BioSh0cked/Moon-Visualizer/refs/heads/main/VisualChain.svg)
 
 ## Usage
-1. Enter Perform Mode (F1)
-2. Choose:
+1. Install [TouchDesigner](https://derivative.ca/download)
+2. Open Project
+3. Enter Perform Mode (F1)
+4. Choose:
    - Local file (file directory), or
    - Direct URL (string input)
-3. Visualizer activates automatically when audio is present
+5. Visualizer activates automatically when audio is present
 
 ## Demo
 ![BaseVisual](https://github.com/BioSh0cked/Moon-Visualizer/blob/main/BaseVisual.gif?raw=true)
