@@ -1,18 +1,3 @@
-# Moon Surface Audio Visualizer (TouchDesigner)
-
-A **Perform Mode** audio visualizer built in TouchDesigner that renders a procedural, moon-like surface driven by Touchdesigner's audio analysis. Noise is added through the surface of the Moon through [NASA's Moon Trek](https://trek.nasa.gov/moon/). Supports both **direct file URLs** and **local file selection**.
-
-## Features
-- URL or local audio input
-- Audio-reactive visualizer (noise optionally based on the Moon's surface)
-- Perform Mode UI (file select + URL input)
-
-## Node Visualizer Chain
-![Visual Chain](https://raw.githubusercontent.com/BioSh0cked/Moon-Visualizer/refs/heads/main/VisualChain.svg)
-
-## Usage
-1. Enter Perform Mode (F1)
-2. Choose:
-   - Local file (file directory), or
-   - Direct URL (string input)
-3. Visualizer activates automatically when audio is present
+version https://git-lfs.github.com/spec/v1
+oid sha256:36da66c644df65f2188e981a2ad67f775394941fb592d86a8037c78ddc97cd0e
+size 835
