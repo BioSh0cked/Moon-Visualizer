@@ -8,7 +8,7 @@ A **Perform Mode** audio visualizer built in TouchDesigner that renders a proced
 - Perform Mode UI (file select + URL input)
 
 ## Node Visualizer Chain
-![Visual Chain](https://raw.githubusercontent.com/BioSh0cked/Moon-Visualizer/refs/heads/main/VisualChain.svg)
+![Visual Chain](https://media.githubusercontent.com/media/BioSh0cked/Moon-Visualizer/refs/heads/main/VisualChain.svg)
 
 ## Usage
 1. Enter Perform Mode (F1)
