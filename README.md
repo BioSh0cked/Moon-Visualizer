@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1419ed72dc6f8df87f1a6efbccd452305c8e0cfba56045202c203645cf5be09
-size 947
-=======
 # Moon Surface Audio Visualizer (TouchDesigner)
 
 A **Perform Mode** audio visualizer built in TouchDesigner that renders a procedural, moon-like surface driven by Touchdesigner's audio analysis. Noise is added through the surface of the Moon through [NASA's Moon Trek](https://trek.nasa.gov/moon/). Supports both **direct file URLs** and **local file selection**.
