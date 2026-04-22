@@ -16,8 +16,9 @@ A **Perform Mode** audio visualizer built in TouchDesigner that renders a proced
 3. Enter Perform Mode (F1)
 4. Choose:
    - Local file (file directory), or
-   - Direct URL (string input)
-5. Visualizer activates automatically when audio is present
+   - Direct URL (string input), or
+   - Webcame mode
+5. Visualizer activates automatically when audio is present / can be directly controller through hand tracking via webcam.
 
 ## Demo
 ![BaseVisual](https://github.com/BioSh0cked/Moon-Visualizer/blob/main/BaseVisual.gif?raw=true)
