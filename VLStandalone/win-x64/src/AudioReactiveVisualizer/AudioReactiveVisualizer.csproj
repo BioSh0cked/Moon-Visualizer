@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>WinExe</OutputType>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishDir>..\..\AudioReactiveVisualizer</PublishDir>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <ApplicationManifest>App.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Tristan\Downloads\MoonVisualizer\AudioReactiveVisualizer.pc" Condition="Exists('C:\Users\Tristan\Downloads\MoonVisualizer\AudioReactiveVisualizer.pc')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>%(Filename)%(Extension)</Link>
+    </None>
+    <None Include="C:\Users\Tristan\Downloads\MoonVisualizer\presets\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>presets\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="..\..\..\..\AudioReactiveVisualizer.props" Condition="Exists('..\..\..\..\AudioReactiveVisualizer.props')" />
+  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="SharpDX.MediaFoundation">
+      <ExcludeAssets>all</ExcludeAssets>
+      <GeneratePathProperty>true</GeneratePathProperty>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp" />
+    <PackageReference Include="SkiaSharp.Svg" />
+    <PackageReference Include="Stride.Core.Mathematics" />
+    <PackageReference Include="System.Interactive" />
+    <PackageReference Include="System.Management" />
+    <PackageReference Include="System.Reactive" />
+    <PackageReference Include="VL.App.WindowsForms" />
+    <PackageReference Include="VL.Audio" />
+    <PackageReference Include="VL.CoreLib" />
+    <PackageReference Include="VL.Skia" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="$(PkgSharpDX_MediaFoundation)\lib\net45\SharpDX.MediaFoundation.dll">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="VL.Audio.vl" HintPath="C:\Program Files\vvvv\vvvv_gamma_7.1-win-x64\package-cache\VL.Audio.1.9.17\VL.Audio.vl.dll" />
+    <Reference Include="VL.Core.Commands.vl" HintPath="C:\Program Files\vvvv\vvvv_gamma_7.1-win-x64\package-cache\VL.Core.Commands.2025.7.1\VL.Core.Commands.vl.dll" />
+    <Reference Include="VL.CoreLib.vl" HintPath="C:\Program Files\vvvv\vvvv_gamma_7.1-win-x64\package-cache\VL.CoreLib.2025.7.1\VL.CoreLib.vl.dll" />
+    <Reference Include="VL.CoreLib.Windows" HintPath="C:\Program Files\vvvv\vvvv_gamma_7.1-win-x64\packs\dependencies\VL.CoreLib.Windows.dll" />
+    <Reference Include="VL.CoreLib.Windows.vl" HintPath="C:\Program Files\vvvv\vvvv_gamma_7.1-win-x64\package-cache\VL.CoreLib.Windows.2025.7.1\VL.CoreLib.Windows.vl.dll" />
+    <Reference Include="VL.Serialization.Raw.vl" HintPath="C:\Program Files\vvvv\vvvv_gamma_7.1-win-x64\package-cache\VL.Serialization.Raw.2025.7.1\VL.Serialization.Raw.vl.dll" />
+    <Reference Include="VL.Skia.vl" HintPath="C:\Program Files\vvvv\vvvv_gamma_7.1-win-x64\package-cache\VL.Skia.2025.7.1\VL.Skia.vl.dll" />
+  </ItemGroup>
+  <Target Name="AddAliases" BeforeTargets="ResolveReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%(FileName)'=='VL.AppServices'" Aliases="e2" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib.vl'" Aliases="e204" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib'" Aliases="e205" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Core'" Aliases="e1" />
+      <ReferencePath Condition="'%(FileName)'=='System'" Aliases="e165" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Core.Mathematics'" Aliases="e5" />
+      <ReferencePath Condition="'%(FileName)'=='Microsoft.Extensions.DependencyInjection.Abstractions'" Aliases="e11" />
+      <ReferencePath Condition="'%(FileName)'=='Microsoft.Extensions.Configuration.Abstractions'" Aliases="e7" />
+      <ReferencePath Condition="'%(FileName)'=='Microsoft.Extensions.Configuration.Binder'" Aliases="e123" />
+      <ReferencePath Condition="'%(FileName)'=='Microsoft.Extensions.Primitives'" Aliases="e17" />
+      <ReferencePath Condition="'%(FileName)'=='netstandard'" Aliases="e14" />
+      <ReferencePath Condition="'%(FileName)'=='Microsoft.Extensions.Logging'" Aliases="e12" />
+      <ReferencePath Condition="'%(FileName)'=='Microsoft.Extensions.Logging.Abstractions'" Aliases="e4" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Serialization.Raw.vl'" Aliases="e206" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Serialization.Raw'" Aliases="e207" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Skia.vl'" Aliases="e212" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Skia'" Aliases="e213" />
+      <ReferencePath Condition="'%(FileName)'=='SkiaSharp'" Aliases="e201" />
+      <ReferencePath Condition="'%(FileName)'=='SkiaSharp.Extended.Svg'" Aliases="e203" />
+      <ReferencePath Condition="'%(FileName)'=='SkiaSharp.Skottie'" Aliases="e219" />
+      <ReferencePath Condition="'%(FileName)'=='SkiaSharp.SceneGraph'" Aliases="e218" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Core.Skia'" Aliases="e214" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Core.Skia.Windows'" Aliases="e217" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib.Windows.vl'" Aliases="e215" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib.Windows'" Aliases="e220" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Core.Commands.vl'" Aliases="e216" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Core.Commands'" Aliases="e226" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Audio.vl'" Aliases="e227" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Audio'" Aliases="e228" />
+      <ReferencePath Condition="'%(FileName)'=='NAudio'" Aliases="e234" />
+      <ReferencePath Condition="'%(FileName)'=='NAudio.Asio'" Aliases="e230" />
+      <ReferencePath Condition="'%(FileName)'=='NAudio.Core'" Aliases="e229" />
+      <ReferencePath Condition="'%(FileName)'=='NAudio.Wasapi'" Aliases="e231" />
+    </ItemGroup>
+  </Target>
+  <Import Project="..\..\..\..\AudioReactiveVisualizer.targets" Condition="Exists('..\..\..\..\AudioReactiveVisualizer.targets')" />
+</Project>

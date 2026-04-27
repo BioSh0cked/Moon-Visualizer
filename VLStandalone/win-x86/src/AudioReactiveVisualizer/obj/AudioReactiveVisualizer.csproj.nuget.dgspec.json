@@ -1,0 +1,160 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Tristan\\Downloads\\MoonVisualizer\\VLStandalone\\win-x86\\src\\AudioReactiveVisualizer\\AudioReactiveVisualizer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Tristan\\Downloads\\MoonVisualizer\\VLStandalone\\win-x86\\src\\AudioReactiveVisualizer\\AudioReactiveVisualizer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Tristan\\Downloads\\MoonVisualizer\\VLStandalone\\win-x86\\src\\AudioReactiveVisualizer\\AudioReactiveVisualizer.csproj",
+        "projectName": "AudioReactiveVisualizer",
+        "projectPath": "C:\\Users\\Tristan\\Downloads\\MoonVisualizer\\VLStandalone\\win-x86\\src\\AudioReactiveVisualizer\\AudioReactiveVisualizer.csproj",
+        "packagesPath": "C:\\Users\\Tristan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tristan\\Downloads\\MoonVisualizer\\VLStandalone\\win-x86\\src\\AudioReactiveVisualizer\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tristan\\Downloads\\MoonVisualizer\\VLStandalone\\win-x86\\src\\NuGet.Config",
+          "C:\\Users\\Tristan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://teamcity.vvvv.org/guestAuth/app/nuget/v1/FeedService.svc/": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "SharpDX.MediaFoundation": {
+              "include": "None",
+              "target": "Package",
+              "version": "[4.2.0, )",
+              "generatePathProperty": true,
+              "versionCentrallyManaged": true
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.8, )",
+              "versionCentrallyManaged": true
+            },
+            "SkiaSharp.Svg": {
+              "target": "Package",
+              "version": "[1.60.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Stride.Core.Mathematics": {
+              "target": "Package",
+              "version": "[4.2.1.2487, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Interactive": {
+              "target": "Package",
+              "version": "[6.0.1, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Reactive": {
+              "target": "Package",
+              "version": "[6.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "VL.App.WindowsForms": {
+              "target": "Package",
+              "version": "[2025.7.1, )",
+              "versionCentrallyManaged": true
+            },
+            "VL.Audio": {
+              "target": "Package",
+              "version": "[1.9.17, )",
+              "versionCentrallyManaged": true
+            },
+            "VL.CoreLib": {
+              "target": "Package",
+              "version": "[2025.7.1, )",
+              "versionCentrallyManaged": true
+            },
+            "VL.Skia": {
+              "target": "Package",
+              "version": "[2025.7.1, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Microsoft.CodeAnalysis.Common": "4.11.0",
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.11.0",
+            "Microsoft.CodeAnalysis.Workspaces.Common": "4.11.0",
+            "Microsoft.CodeAnalysis.Workspaces.MSBuild": "4.11.0",
+            "SharpDX.MediaFoundation": "4.2.0",
+            "SkiaSharp": "2.88.8",
+            "SkiaSharp.Svg": "1.60.0",
+            "Stride.Core.Mathematics": "4.2.1.2487",
+            "System.Interactive": "6.0.1",
+            "System.Management": "8.0.0",
+            "System.Reactive": "6.0.0",
+            "VL.App.WindowsForms": "2025.7.1",
+            "VL.Audio": "1.9.17",
+            "VL.CoreLib": "2025.7.1",
+            "VL.Skia": "2025.7.1"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
