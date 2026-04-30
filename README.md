@@ -7,6 +7,9 @@ A **Perform Mode** audio visualizer built in TouchDesigner that renders a proced
 - Audio-reactive visualizer (noise optionally based on the Moon's surface)
 - Perform Mode UI (file select + URL input)
 
+## Touchdesigner vs vvvv Gamma
+The .toe project contains the full TouchDesigner project which has full features while the compiled executables are vvvv Gamma spectrograms.
+
 ## Node Visualizer Chain
 ![Visual Chain](https://media.githubusercontent.com/media/BioSh0cked/Moon-Visualizer/refs/heads/main/VisualChain.svg)
 
